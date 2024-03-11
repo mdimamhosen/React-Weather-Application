@@ -4,7 +4,7 @@ const Weather = ({ weatherData }) => {
   return (
     <div className="w-full px-4 md:px-0">
       {weatherData.weather ? (
-        <div className="w-[80%] max-w-xl mx-auto bg-gray-300 shadow-lg rounded-xl p-4">
+        <div className="w-[80%] max-w-xl mx-auto bg-stone-200 shadow-lg rounded-xl p-4">
           <div className="flex flex-col md:flex-row items-center justify-center">
             <div className="w-full md:w-1/2 mb-4 md:mb-0 md:mr-4">
               <div className="flex flex-col items-center justify-between h-full">

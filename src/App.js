@@ -33,18 +33,20 @@ function App() {
     }
   };
   return (
-    <div className="w-full h-full relative">
-      <div className="text-center p-4">
-        <input
-          type="text"
-          className="py-3 px-6 w-[90%] max-w-[900px] mx-auto text-lg rounded-3xl  border border-gray-200 text-gray-600 placeholder:text-gray-400 focus:outline-none bg-white-600/100 shadow-md "
-          placeholder="Enter location..."
-          value={location}
-          onChange={(event) => setLocation(event.target.value)}
-          onKeyDownCapture={searchLocation}
-        />{" "}
-      </div>{" "}
-      <Weather weatherData={data} />{" "}
+    <div className=" h-[100vh] w-[100vw]  bg-slate-100 ">
+      <div className="w-full h-fullrelative">
+        <div className="text-center p-4">
+          <input
+            type="text"
+            className="placeholder:text-2xl px-6 w-[90%] max-w-[900px] py-5 mx-auto text-lg rounded-3xl  border border-gray-200 text-gray-600 placeholder:text-gray-500 focus:outline-none bg-white-600/100 shadow-md "
+            placeholder="Enter location..."
+            value={location}
+            onChange={(event) => setLocation(event.target.value)}
+            onKeyDownCapture={searchLocation}
+          />{" "}
+        </div>{" "}
+        <Weather weatherData={data} />{" "}
+      </div>
     </div>
   );
 }
